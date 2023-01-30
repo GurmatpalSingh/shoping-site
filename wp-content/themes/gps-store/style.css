@@ -1,0 +1,269 @@
+/*
+Theme Name: GPS Store
+Theme URI: https://amritsar-techies-web-design-development-seo.business.site/
+Author: inbrackets
+Author URI: https://amritsar-techies-web-design-development-seo.business.site/
+Description: GPS Store is a compatible WooCommerce theme made with WordPress. It is the best theme for you to sell anything online, beautifuly designed and fully responsive.
+Version: 1.0
+Text Domain: gps-store
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, translation-ready, blog, right-sidebar, sticky-post, threaded-comments
+*/
+/* * colors #444444 #0082CA #D4F6CC #3CCF4E rgb(0, 56, 101) rgb(239, 91, 12) rgb(212, 246, 204) rgb(60, 207, 78) */
+
+
+body,
+html,
+.font-secondary,
+.nav-link {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+a {
+    color: #444444 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#logo a,
+.top-search-form input,
+.font-primary {
+    font-family: 'Zilla Slab', serif !important;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+/* General */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+.gc-ml-1{
+    margin-left:7px !important;
+}
+/* * Topbar CSS start */
+#top-bar {
+    position: relative;
+    border-bottom: 1px solid #0082CA;
+    font-size: 13px;
+    background: #0082CA;
+    color: #fff;
+    padding:13px 0;
+}
+#top-bar a{ color: #fff !important;}
+
+/* *Topbar CSS end */
+
+/*  * navogation css Start */
+#header {
+    position: relative;
+    background-color: #fff;
+}
+
+#header-wrap {
+    /* position: absolute; */
+    height: auto;
+    width: 100%;
+    z-index: 299;
+    background-color: #fff;
+    transition: height .2s ease 0s, background-color .3s ease 0s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: left, top, transform;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+
+    font-weight: 700;
+    font-size: .85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+   padding:30px 15px !important;
+}
+.navbar-nav .nav-item a span:hover{
+    color:#0082CA;
+}
+
+
+.navbar-nav .dropdown .dropdown-menu {
+    border: none;
+    box-shadow: 0 13px 42px 11px rgb(0 0 0 / 5%);
+    border-top: 2px solid #0082CA;
+    top: 80px;
+    border-radius:0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active, .dropdown-item:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #444 !important;
+}
+a.dropdown-item span:hover{
+    color: #fff !important;
+}
+.navbar-nav .dropdown .dropdown-menu .dropdown-item {
+    font-size: 14px;
+}
+
+.navbar-nav .dropdown .dropdown-menu .nav-item {
+    padding: 0;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+/* * navogation css End */
+
+
+.gc-nav-left{
+    display: flex;
+}
+.gc-nav-left svg{
+    height: 16px;
+    width: 16px;
+    padding:30px 6px;
+}
+.gc-nav-left svg path{
+    fill:#444;
+}
+.gc-nav-left:before{
+    content: "|";
+    transform: translatey(27px);
+    padding-right: 10px;
+    height:25px;
+    overflow:hidden;
+}
+/* *cart icon css start  */
+
+.gc-account .cart{
+    position: relative;
+}
+
+.gc-account .cart .items{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: auto;
+    right: 0;
+    font-size: 10px;
+    color: #fff;
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #0082CA;
+}
+/* *cart icon css  End*/
+
+/* *User Account CSS Start*/
+.gc-user ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.gc-user ul li{position: relative;}
+.gc-user ul li:hover ul{
+    display: block;
+}
+.gc-user ul li ul{
+    /* display:none; */
+    border: none;
+    box-shadow: 0 13px 42px 11px rgb(0 0 0 / 5%);
+    border-top: 2px solid #0082CA;
+    top: 80px;
+    padding:.5rem 0;
+    border-radius:0;
+}
+/* *User Account CSS End*/
+
+/* *Search CSS Start*/
+.gc-search form{    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    padding: 14px;
+    z-index: 2;
+}
+.gc-search form input{
+    width: 96%;
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    padding: 5px;
+    line-height: 0;
+    font-weight: 700;
+}
+.gc-search .search-submit{
+    float: right;
+    margin-top: 13px;
+    background: transparent;
+    border: 0;
+}
+.gc-search form input:focus-visible {outline:0;}
+
+.gc-search form input::before{
+    content: '';
+    }
+.gc-search form input:-internal-autofill-selected { background: transparent;}
+.gc-search .search-submit svg{
+    padding:0 ; 
+}
+/* *Search CSS End*/
+
+
+/* ? Media Query Start */
+@media(max-width:768px){
+    .gc-nav-left:before{
+        display: none;
+    }
+    .gc-search form{
+        padding: 18px;
+    }
+    .gc-search .search-submit svg{
+        padding:0 ; 
+    }
+    .gc-search form input{
+        width:94%;
+    }
+    #gps-custom-menu{
+        position: fixed;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        background: rgb(255, 255, 255);
+        top: 84px;
+        height: 100vh;
+    }
+}
+/* ? Media Query End */
